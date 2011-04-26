@@ -11,7 +11,7 @@ _extra_mako = ["Mako >= 0.1.1"]
 
 setup(
     name='tw2.jqplugins.flot',
-    version='2.0a2',
+    version='2.0a3',
     description='toscawidgets2 wrapper for the flot jQuery plugin',
     long_description=long_description,
     author='Ralph Bean',
