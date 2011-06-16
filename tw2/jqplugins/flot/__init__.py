@@ -4,3 +4,4 @@ Get the source from http://github.com/ralphbean/tw2.jqplugins.jqplot
 """
 
 from widgets import *
+from base import flot_js
