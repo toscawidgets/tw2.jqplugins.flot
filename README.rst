@@ -12,7 +12,7 @@ tw2.jqplugins.flot is a `toscawidgets2 (tw2)`_ wrapper for `flot`_.
 
 Live Demo
 ---------
-Peep the `live demonstration <http://craftsman.rc.rit.edu/module?module=tw2.jqplugins.flot>`_.
+Peep the `live demonstration <http://tw2-demos.threebean.org/module?module=tw2.jqplugins.flot>`_.
 
 Links
 -----
