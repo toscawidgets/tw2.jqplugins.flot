@@ -2,3 +2,4 @@ recursive-include tw2/jqplugins/flot/static *
 recursive-include tw2/jqplugins/flot/templates *
 include README.rst
 include MANIFEST.in
+recursive-include tests *.py
