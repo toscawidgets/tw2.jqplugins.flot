@@ -13,13 +13,13 @@ _extra_mako = ["Mako >= 0.1.1"]
 
 setup(
     name='tw2.jqplugins.flot',
-    version='2.0a5',
+    version='2.0.0',
     description='toscawidgets2 wrapper for the flot jQuery plugin',
     long_description=long_description,
     author='Ralph Bean',
-    author_email='ralph.bean@gmail.com',
+    author_email='rbean@redhat.com',
     license='MIT',
-    url='http://github.com/ralphbean/tw2.jqplugins.flot',
+    url='http://github.com/toscawidgets/tw2.jqplugins.flot',
     install_requires=[
         "tw2.core>=2.0b2",
         "tw2.excanvas",
@@ -29,7 +29,9 @@ setup(
         'genshi': _extra_genshi,
         'mako': _extra_mako,
     },
-    tests_require = ['BeautifulSoup', 'nose', 'FormEncode', 'WebTest',] + _extra_genshi + _extra_mako,
+    tests_require = [
+        'nose',
+    ] + _extra_genshi + _extra_mako,
     packages=find_packages(exclude=['ez_setup', 'tests']),
     namespace_packages = ['tw2'],
     zip_safe=False,
@@ -44,7 +46,7 @@ setup(
         'toscawidgets.widgets',
     ],
     classifiers = [
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Environment :: Web Environment :: ToscaWidgets',
         'Topic :: Software Development :: Libraries :: Python Modules',
