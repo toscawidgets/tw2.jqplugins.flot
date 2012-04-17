@@ -17,6 +17,7 @@ BuildArch:      noarch
 # For building, generally
 BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
+BuildRequires:  python-formencode
 BuildRequires:  python-tw2-core
 BuildRequires:  python-tw2-excanvas
 BuildRequires:  python-tw2-jqplugins-ui
