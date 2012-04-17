@@ -32,6 +32,9 @@ setup(
     tests_require = [
         'nose',
         'formencode',
+        'BeautifulSoup',
+        'strainer',
+        'WebTest',
     ] + _extra_genshi + _extra_mako,
     packages=find_packages(exclude=['ez_setup', 'tests']),
     namespace_packages = ['tw2'],
