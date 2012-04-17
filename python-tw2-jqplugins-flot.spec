@@ -89,5 +89,9 @@ rm -rf %{buildroot}
 %{python_sitelib}/*
 
 %changelog
+* Tue Apr 17 2012 Ralph Bean <rbean@redhat.com> - 2.0.1-1
+- Package new version
+- Fixes test suite
+
 * Thu Apr 12 2012 Ralph Bean <rbean@redhat.com> - 2.0.0-1
 - Initial packaging for Fedora
