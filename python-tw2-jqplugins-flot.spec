@@ -3,15 +3,14 @@
 %global modname tw2.jqplugins.flot
 
 Name:           python-tw2-jqplugins-flot
-Version:        2.0.0
-Release:        1%{?dist}
+Version:        2.0.1
+Release:        2%{?dist}
 Summary:        jQuery flot (plotting) for ToscaWidgets2
 
 Group:          Development/Languages
 License:        MIT
 URL:            http://toscawidgets.org
 Source0:        http://pypi.python.org/packages/source/t/%{modname}/%{modname}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
 # For building, generally
@@ -46,7 +45,7 @@ server-side code and JavaScripts/CSS resources. The library aims to be:
 flexible, reliable, documented, performant, and as simple as possible.
 
 flot is a pure Javascript plotting library for jQuery. It produces graphical
-plots of arbitrary datasets on-the-fly client-side.
+plots of arbitrary data sets on-the-fly client-side.
 
 This module, tw2.jqplugins.flot, provides toscawidgets2 (tw2) access
 to flot widgets.
@@ -73,22 +72,22 @@ rm setup.cfg
 rm -f build/lib/tw2/jqplugins/__init__.py*
 
 %install
-rm -rf %{buildroot}
 %{__python} setup.py install -O1 --skip-build \
     --install-data=%{_datadir} --root %{buildroot}
 
 %check
 PYTHONPATH=$(pwd) python setup.py test
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root,-)
 %doc README.rst LICENSE.txt
 %{python_sitelib}/*
 
 %changelog
+* Wed May 02 2012 Ralph Bean <rbean@redhat.com> - 2.0.1-2
+- Removed clean section
+- Removed defattr in files section
+- Removed unnecessary references to buildroot
+
 * Tue Apr 17 2012 Ralph Bean <rbean@redhat.com> - 2.0.1-1
 - Package new version
 - Fixes test suite
