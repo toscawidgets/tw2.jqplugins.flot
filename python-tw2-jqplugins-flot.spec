@@ -4,7 +4,7 @@
 
 Name:           python-tw2-jqplugins-flot
 Version:        2.0.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        jQuery flot (plotting) for ToscaWidgets2
 
 Group:          Development/Languages
@@ -80,9 +80,14 @@ PYTHONPATH=$(pwd) python setup.py test
 
 %files
 %doc README.rst LICENSE.txt
-%{python_sitelib}/*
+
+%{python_sitelib}/tw2/jqplugins/flot
+%{python_sitelib}/%{modname}-%{version}-*
 
 %changelog
+* Mon May 07 2012 Ralph Bean <rbean@redhat.com> - 2.0.1-3
+- Updated directory ownership to avoid conflict with other tw2 packages
+
 * Wed May 02 2012 Ralph Bean <rbean@redhat.com> - 2.0.1-2
 - Removed clean section
 - Removed defattr in files section
