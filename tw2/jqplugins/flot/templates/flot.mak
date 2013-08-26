@@ -4,7 +4,7 @@
   <div id="flotLabel">${w.label}</div>
   <script type="text/javascript">
 	% if w.data:
-    $.plot($("#${w.selector}"), ${w._data}, ${w._options});
+    $.plot($("#${w.selector|n}"), ${w._data|n}, ${w._options|n});
 	% endif
   </script>
 </div>
