@@ -13,7 +13,7 @@ _extra_mako = ["Mako >= 0.1.1"]
 
 setup(
     name='tw2.jqplugins.flot',
-    version='2.0.0',
+    version='2.0.2',
     description='toscawidgets2 wrapper for the flot jQuery plugin',
     long_description=long_description,
     author='Ralph Bean',
@@ -31,6 +31,10 @@ setup(
     },
     tests_require = [
         'nose',
+        'formencode',
+        'BeautifulSoup',
+        'strainer',
+        'WebTest',
     ] + _extra_genshi + _extra_mako,
     packages=find_packages(exclude=['ez_setup', 'tests']),
     namespace_packages = ['tw2'],
